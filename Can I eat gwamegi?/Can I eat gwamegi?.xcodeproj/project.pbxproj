@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63047F832C67083C00995467 /* EnterinformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F822C67083C00995467 /* EnterinformationView.swift */; };
+		01E462082C67402B00FD6EF3 /* gpt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E462062C67402B00FD6EF3 /* gpt.swift */; };
+		01E462092C67402B00FD6EF3 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E462072C67402B00FD6EF3 /* api.swift */; };
+		01E462142C674D6600FD6EF3 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E4620A2C674D6600FD6EF3 /* Pretendard-Black.otf */; };
+		01E462152C674D6600FD6EF3 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E4620B2C674D6600FD6EF3 /* Pretendard-Bold.otf */; };
+		01E462162C674D6600FD6EF3 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E4620C2C674D6600FD6EF3 /* Pretendard-ExtraBold.otf */; };
+		01E462172C674D6600FD6EF3 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E4620D2C674D6600FD6EF3 /* Pretendard-ExtraLight.otf */; };
+		01E462182C674D6600FD6EF3 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E4620E2C674D6600FD6EF3 /* Pretendard-Light.otf */; };
+		01E462192C674D6600FD6EF3 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E4620F2C674D6600FD6EF3 /* Pretendard-Medium.otf */; };
+		01E4621A2C674D6600FD6EF3 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E462102C674D6600FD6EF3 /* Pretendard-Regular.otf */; };
+		01E4621B2C674D6600FD6EF3 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E462112C674D6600FD6EF3 /* Pretendard-SemiBold.otf */; };
+		01E4621C2C674D6600FD6EF3 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E462122C674D6600FD6EF3 /* Pretendard-Thin.otf */; };
+		01E4621E2C675CD400FD6EF3 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E4621D2C675CD400FD6EF3 /* DateManager.swift */; };
+		63047F832C67083C00995467 /* EnterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F822C67083C00995467 /* EnterInformationView.swift */; };
 		63047F852C670CED00995467 /* OnboardingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F842C670CED00995467 /* OnboardingVIew.swift */; };
 		9D4F37602C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */; };
 		9D4F37622C66915800DD96B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F37612C66915800DD96B0 /* ContentView.swift */; };
-		9D4F37642C66915800DD96B0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F37632C66915800DD96B0 /* Item.swift */; };
 		9D4F37662C66915900DD96B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4F37652C66915900DD96B0 /* Assets.xcassets */; };
 		9D4F37692C66915900DD96B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4F37682C66915900DD96B0 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		013793F62C67322E003DDD72 /* Can-I-eat-gwamegi--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Can-I-eat-gwamegi--Info.plist"; sourceTree = SOURCE_ROOT; };
-		63047F822C67083C00995467 /* EnterinformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterinformationView.swift; sourceTree = "<group>"; };
+		01E462062C67402B00FD6EF3 /* gpt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gpt.swift; sourceTree = "<group>"; };
+		01E462072C67402B00FD6EF3 /* api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		01E4620A2C674D6600FD6EF3 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		01E4620B2C674D6600FD6EF3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		01E4620C2C674D6600FD6EF3 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		01E4620D2C674D6600FD6EF3 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		01E4620E2C674D6600FD6EF3 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		01E4620F2C674D6600FD6EF3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		01E462102C674D6600FD6EF3 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		01E462112C674D6600FD6EF3 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		01E462122C674D6600FD6EF3 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		01E4621D2C675CD400FD6EF3 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		63047F822C67083C00995467 /* EnterInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInformationView.swift; sourceTree = "<group>"; };
 		63047F842C670CED00995467 /* OnboardingVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVIew.swift; sourceTree = "<group>"; };
 		9D4F375C2C66915800DD96B0 /* Can I eat gwamegi?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can I eat gwamegi?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Can_I_eat_gwamegi_App.swift; sourceTree = "<group>"; };
 		9D4F37612C66915800DD96B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9D4F37632C66915800DD96B0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9D4F37652C66915900DD96B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D4F37682C66915900DD96B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01E462132C674D6600FD6EF3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				01E4620A2C674D6600FD6EF3 /* Pretendard-Black.otf */,
+				01E4620B2C674D6600FD6EF3 /* Pretendard-Bold.otf */,
+				01E4620C2C674D6600FD6EF3 /* Pretendard-ExtraBold.otf */,
+				01E4620D2C674D6600FD6EF3 /* Pretendard-ExtraLight.otf */,
+				01E4620E2C674D6600FD6EF3 /* Pretendard-Light.otf */,
+				01E4620F2C674D6600FD6EF3 /* Pretendard-Medium.otf */,
+				01E462102C674D6600FD6EF3 /* Pretendard-Regular.otf */,
+				01E462112C674D6600FD6EF3 /* Pretendard-SemiBold.otf */,
+				01E462122C674D6600FD6EF3 /* Pretendard-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		9D4F37532C66915800DD96B0 = {
 			isa = PBXGroup;
 			children = (
@@ -59,10 +97,13 @@
 			isa = PBXGroup;
 			children = (
 				013793F62C67322E003DDD72 /* Can-I-eat-gwamegi--Info.plist */,
+				01E462132C674D6600FD6EF3 /* Font */,
 				9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */,
 				9D4F37612C66915800DD96B0 /* ContentView.swift */,
-				9D4F37632C66915800DD96B0 /* Item.swift */,
-				63047F822C67083C00995467 /* EnterinformationView.swift */,
+				01E462072C67402B00FD6EF3 /* api.swift */,
+				01E462062C67402B00FD6EF3 /* gpt.swift */,
+				63047F822C67083C00995467 /* EnterInformationView.swift */,
+				01E4621D2C675CD400FD6EF3 /* DateManager.swift */,
 				63047F842C670CED00995467 /* OnboardingVIew.swift */,
 				9D4F37652C66915900DD96B0 /* Assets.xcassets */,
 				9D4F37672C66915900DD96B0 /* Preview Content */,
@@ -136,7 +177,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E462172C674D6600FD6EF3 /* Pretendard-ExtraLight.otf in Resources */,
 				9D4F37692C66915900DD96B0 /* Preview Assets.xcassets in Resources */,
+				01E462152C674D6600FD6EF3 /* Pretendard-Bold.otf in Resources */,
+				01E462192C674D6600FD6EF3 /* Pretendard-Medium.otf in Resources */,
+				01E4621A2C674D6600FD6EF3 /* Pretendard-Regular.otf in Resources */,
+				01E462162C674D6600FD6EF3 /* Pretendard-ExtraBold.otf in Resources */,
+				01E462182C674D6600FD6EF3 /* Pretendard-Light.otf in Resources */,
+				01E4621B2C674D6600FD6EF3 /* Pretendard-SemiBold.otf in Resources */,
+				01E462142C674D6600FD6EF3 /* Pretendard-Black.otf in Resources */,
+				01E4621C2C674D6600FD6EF3 /* Pretendard-Thin.otf in Resources */,
 				9D4F37662C66915900DD96B0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,11 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E4621E2C675CD400FD6EF3 /* DateManager.swift in Sources */,
+				01E462092C67402B00FD6EF3 /* api.swift in Sources */,
 				9D4F37622C66915800DD96B0 /* ContentView.swift in Sources */,
-				9D4F37642C66915800DD96B0 /* Item.swift in Sources */,
 				63047F852C670CED00995467 /* OnboardingVIew.swift in Sources */,
+				01E462082C67402B00FD6EF3 /* gpt.swift in Sources */,
 				9D4F37602C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift in Sources */,
-				63047F832C67083C00995467 /* EnterinformationView.swift in Sources */,
+				63047F832C67083C00995467 /* EnterInformationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
