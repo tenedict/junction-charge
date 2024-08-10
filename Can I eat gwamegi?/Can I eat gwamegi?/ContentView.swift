@@ -1,61 +1,54 @@
-//
-//  ContentView.swift
-//  Can I eat gwamegi?
-//
-//  Created by 문재윤 on 8/10/24.
-//
+import Foundation
+import Combine
 
-import SwiftUI
-import SwiftData
-
-struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
-    var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+class ContentViewModel: ObservableObject {
+    @Published var prompt: String = ""
+    @Published var response: String = ""
+    @Published var isLoading: Bool = false
+    
+    private var apiService = APIService.shared
+    private var cancellables = Set<AnyCancellable>()
+    
+    func fetchResponse() {
+        isLoading = true
+        
+        apiService.fetchResponse(prompt: prompt)
+            .receive(on: DispatchQueue.main) // 메인 스레드에서 UI 업데이트
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    self.response = "Error: \(error.localizedDescription)"
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
+                self.isLoading = false
+            }, receiveValue: { result in
+                self.response = result
+            })
+            .store(in: &cancellables)
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @StateObject private var viewModel = ContentViewModel()
+    
+    var body: some View {
+        VStack {
+            TextField("Enter your question", text: $viewModel.prompt, onCommit: viewModel.fetchResponse)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            if viewModel.isLoading {
+                ProgressView()
+            } else {
+                Text(viewModel.response)
+                    .padding()
+            }
+        }
+        .padding()
+    }
 }
