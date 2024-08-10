@@ -4,13 +4,13 @@ import Combine
 class APIService: ObservableObject {
     static let shared = APIService()
     
-    private let baseURL = "http://127.0.0.1:8000/chatgpt/"
+    private let baseURL = "http://34.64.220.15:8000/chatgpt/"
     
     private var csrfToken: String?
     
     // CSRF 토큰을 가져오는 메서드
     func fetchCSRFToken() -> AnyPublisher<String, URLError> {
-        guard let url = URL(string: "http://127.0.0.1:8000/") else {
+        guard let url = URL(string: "http://34.64.220.15:8000") else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }
         
