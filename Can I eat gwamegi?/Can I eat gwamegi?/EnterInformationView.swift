@@ -11,7 +11,7 @@ struct EnterInformationView: View {
             TabView(selection: $currentPage) {
                 VStack(spacing: 9) {
                     HStack {
-                        Text("임산부에게 좋은 특산물을 확인하세요")
+                        Text("Explore local products beneficial for pregnant women.")
                             .font(.system(size: 22, weight: .bold))
                             .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
                         
@@ -19,7 +19,7 @@ struct EnterInformationView: View {
                     }
                     
                     HStack {
-                        Text("본 서비스는 경상북도 특산물과 함께합니다")
+                        Text("This service is brought to you by Gyeongsanbuk-do local products.")
                             .font(.system(size: 17, weight: .semibold))
                             .foregroundStyle(Color(red: 0.65, green: 0.58, blue: 0.52))
                         
@@ -50,8 +50,8 @@ struct EnterInformationView: View {
                 
                 VStack(spacing: 9) {
                     HStack {
-                        Text("출산 예정일을 선택해주세요")
-                            .font(.system(size: 22, weight: .heavy))
+                        Text("Provide your expected due date.")
+                            .font(.system(size: 22, weight: .bold))
                             .foregroundStyle(Color(red: 0.12, green: 0.11, blue: 0.11))
                         
                         Spacer()
@@ -85,7 +85,7 @@ struct EnterInformationView: View {
                     .resizable()
                     .frame(width: 353, height: 55)
                     .overlay {
-                        Text("다음")
+                        Text("Next")
                             .font(.custom("Pretendard-SemiBold", size: 18))
                             .foregroundStyle(Color.white)
                     }

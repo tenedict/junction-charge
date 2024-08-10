@@ -20,7 +20,7 @@ struct OnboardingView: View {
                     
                     Spacer()
                     
-                    Text("변화하는 몸 상태를\n체크해요")
+                    Text("Check the changes \nin your body condition\n")
                         .font(.system(size: 22, weight: .bold))
                         .multilineTextAlignment(.center)
                         .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
@@ -39,7 +39,7 @@ struct OnboardingView: View {
                     
                     Spacer()
                     
-                    Text("오늘의 상태에 따라\n특산물 추천을 받아요")
+                    Text("Receive local product recommendations \nbased on your condition")
                         .font(.system(size: 22, weight: .bold))
                         .multilineTextAlignment(.center)
                         .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
@@ -58,7 +58,7 @@ struct OnboardingView: View {
                     
                     Spacer()
                     
-                    Text("신선한 특산물을 챙겨먹고\n수달을 통해 변화를 관찰해요")
+                    Text("Enjoy fresh local specialties\nand monitor changes\nthrough sea-otter")
                         .font(.system(size: 22, weight: .bold))
                         .multilineTextAlignment(.center)
                         .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
@@ -78,7 +78,7 @@ struct OnboardingView: View {
                     .resizable()
                     .frame(width: 353, height: 55)
                     .overlay {
-                        Text("다음")
+                        Text(currentPage == 2 ? "Start" : "Next")
                             .font(.custom("Pretendard-SemiBold", size: 18))
                             .foregroundStyle(Color.white)
                     }

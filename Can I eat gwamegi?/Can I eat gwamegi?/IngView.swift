@@ -5,7 +5,7 @@ struct IngView: View {
     var body: some View {
         VStack() {
             HStack {
-                Text("엄마의 상태에 맞는 음식을 \n고르는 중이에요")
+                Text("Choosing food that\nmatches your condition.")
                     .font(.system(size: 22, weight: .heavy))
                     .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
                     .multilineTextAlignment(.leading)
@@ -19,7 +19,7 @@ struct IngView: View {
             LottieView(name: "loading")
                 .frame(width: 300, height: 300)
             
-            Text("입덧을 해요")
+            Text("I have morning sickness.")
                 .font(.system(size: 17, weight: .bold))
                 .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
                 .multilineTextAlignment(.center)
