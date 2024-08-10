@@ -52,7 +52,7 @@ struct EnterInformationView: View {
                     HStack {
                         Text("출산 예정일을 선택해주세요")
                             .font(.system(size: 22, weight: .heavy))
-                            .foregroundColor(Color(red: 0.12, green: 0.11, blue: 0.11))
+                            .foregroundStyle(Color(red: 0.12, green: 0.11, blue: 0.11))
                         
                         Spacer()
                     }

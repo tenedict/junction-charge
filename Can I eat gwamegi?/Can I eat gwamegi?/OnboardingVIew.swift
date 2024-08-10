@@ -23,7 +23,7 @@ struct OnboardingView: View {
                     Text("변화하는 몸 상태를\n체크해요")
                         .font(.system(size: 22, weight: .bold))
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color(red: 0.29, green: 0.26, blue: 0.23))
+                        .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
                     
                     Spacer()
                 }
@@ -42,7 +42,7 @@ struct OnboardingView: View {
                     Text("오늘의 상태에 따라\n특산물 추천을 받아요")
                         .font(.system(size: 22, weight: .bold))
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color(red: 0.29, green: 0.26, blue: 0.23))
+                        .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
                     
                     Spacer()
                 }
@@ -61,7 +61,7 @@ struct OnboardingView: View {
                     Text("신선한 특산물을 챙겨먹고\n수달을 통해 변화를 관찰해요")
                         .font(.system(size: 22, weight: .bold))
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color(red: 0.29, green: 0.26, blue: 0.23))
+                        .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
                     
                     Spacer()
                 }

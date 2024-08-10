@@ -19,11 +19,12 @@
 		01E4621B2C674D6600FD6EF3 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E462112C674D6600FD6EF3 /* Pretendard-SemiBold.otf */; };
 		01E4621C2C674D6600FD6EF3 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01E462122C674D6600FD6EF3 /* Pretendard-Thin.otf */; };
 		01E4621E2C675CD400FD6EF3 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E4621D2C675CD400FD6EF3 /* DateManager.swift */; };
+		01E462202C67864500FD6EF3 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E4621F2C67864500FD6EF3 /* loading.json */; };
+		01E462222C67880900FD6EF3 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E462212C67880900FD6EF3 /* LottieView.swift */; };
 		63047F832C67083C00995467 /* EnterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F822C67083C00995467 /* EnterInformationView.swift */; };
 		63047F852C670CED00995467 /* OnboardingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F842C670CED00995467 /* OnboardingVIew.swift */; };
 		63A7C7892C677E78006536BD /* IngView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C7882C677E78006536BD /* IngView.swift */; };
 		63A7C78E2C677EC9006536BD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 63A7C78D2C677EC9006536BD /* Lottie */; };
-		63A7C7912C678050006536BD /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 63A7C7902C678050006536BD /* loading.json */; };
 		9D4F37602C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */; };
 		9D4F37622C66915800DD96B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F37612C66915800DD96B0 /* ContentView.swift */; };
 		9D4F37662C66915900DD96B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4F37652C66915900DD96B0 /* Assets.xcassets */; };
@@ -44,10 +45,11 @@
 		01E462112C674D6600FD6EF3 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		01E462122C674D6600FD6EF3 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		01E4621D2C675CD400FD6EF3 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		01E4621F2C67864500FD6EF3 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		01E462212C67880900FD6EF3 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		63047F822C67083C00995467 /* EnterInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInformationView.swift; sourceTree = "<group>"; };
 		63047F842C670CED00995467 /* OnboardingVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVIew.swift; sourceTree = "<group>"; };
 		63A7C7882C677E78006536BD /* IngView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngView.swift; sourceTree = "<group>"; };
-		63A7C7902C678050006536BD /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = ../../../../Downloads/loading.json; sourceTree = "<group>"; };
 		9D4F375C2C66915800DD96B0 /* Can I eat gwamegi?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can I eat gwamegi?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Can_I_eat_gwamegi_App.swift; sourceTree = "<group>"; };
 		9D4F37612C66915800DD96B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,7 +114,8 @@
 				01E4621D2C675CD400FD6EF3 /* DateManager.swift */,
 				63047F842C670CED00995467 /* OnboardingVIew.swift */,
 				63A7C7882C677E78006536BD /* IngView.swift */,
-				63A7C7902C678050006536BD /* loading.json */,
+				01E462212C67880900FD6EF3 /* LottieView.swift */,
+				01E4621F2C67864500FD6EF3 /* loading.json */,
 				9D4F37652C66915900DD96B0 /* Assets.xcassets */,
 				9D4F37672C66915900DD96B0 /* Preview Content */,
 			);
@@ -197,10 +200,10 @@
 				01E462192C674D6600FD6EF3 /* Pretendard-Medium.otf in Resources */,
 				01E4621A2C674D6600FD6EF3 /* Pretendard-Regular.otf in Resources */,
 				01E462162C674D6600FD6EF3 /* Pretendard-ExtraBold.otf in Resources */,
+				01E462202C67864500FD6EF3 /* loading.json in Resources */,
 				01E462182C674D6600FD6EF3 /* Pretendard-Light.otf in Resources */,
 				01E4621B2C674D6600FD6EF3 /* Pretendard-SemiBold.otf in Resources */,
 				01E462142C674D6600FD6EF3 /* Pretendard-Black.otf in Resources */,
-				63A7C7912C678050006536BD /* loading.json in Resources */,
 				01E4621C2C674D6600FD6EF3 /* Pretendard-Thin.otf in Resources */,
 				9D4F37662C66915900DD96B0 /* Assets.xcassets in Resources */,
 			);
@@ -215,6 +218,7 @@
 			files = (
 				01E4621E2C675CD400FD6EF3 /* DateManager.swift in Sources */,
 				01E462092C67402B00FD6EF3 /* api.swift in Sources */,
+				01E462222C67880900FD6EF3 /* LottieView.swift in Sources */,
 				9D4F37622C66915800DD96B0 /* ContentView.swift in Sources */,
 				63047F852C670CED00995467 /* OnboardingVIew.swift in Sources */,
 				01E462082C67402B00FD6EF3 /* gpt.swift in Sources */,
