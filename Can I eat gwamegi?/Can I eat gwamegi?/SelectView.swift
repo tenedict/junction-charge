@@ -70,7 +70,7 @@ struct SelectView: View {
 //                                        Image("symptomNotSelected")
 //                                            .resizable()
 //                                            .frame(width: 170.5, height: 89)
-//                                        
+//
 //                                        Text("Item \(row * 2 + column + 1)")
 //                                            .font(.system(size: 16, weight: .medium))
 //                                            .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
@@ -88,7 +88,7 @@ struct SelectView: View {
 //                            .font(.system(size: 16, weight: .semibold))
 //                            .foregroundStyle(Color(red: 0.49, green: 0.42, blue: 0.37))
 //                            .padding(.leading, 16)
-//                        
+//
 //                        Spacer()
 //                    }
 //                }
