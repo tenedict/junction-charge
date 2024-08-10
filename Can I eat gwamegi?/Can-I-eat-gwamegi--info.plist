@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleGetInfoString</key>
+	<string>Allow Arbitary Loads</string>
+	<key>CFBundleIconFile</key>
+	<string>NSAppTransportSecurity</string>
+	<key>CFBundleSignature</key>
+	<string></string>
+	<key>Information Property List</key>
+	<dict>
+		<key>App Transport Security Settings</key>
+		<dict>
+			<key>Allow Arbitrary Loads</key>
+			<true/>
+		</dict>
+		<key>New item</key>
+		<string></string>
+	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>\</key>
+	<string></string>
+</dict>
+</plist>

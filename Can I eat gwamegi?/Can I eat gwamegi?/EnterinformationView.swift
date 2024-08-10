@@ -8,10 +8,7 @@ struct EnterinformationView: View {
             VStack(alignment: .leading) {
                 HStack {
                     Text("어서오세요!")
-                        .font(
-                            Font.custom("Apple SD Gothic Neo", size: 22)
-                                .weight(.heavy)
-                        )
+                        .font(.system(size: 22, weight: .heavy))
                         .foregroundColor(Color(red: 0.12, green: 0.11, blue: 0.11))
                     Spacer()
                 }

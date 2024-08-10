@@ -26,6 +26,7 @@ struct Can_I_eat_gwamegi_App: App {
     var body: some Scene {
         WindowGroup {
             SymptomsView()
+
         }
         .modelContainer(sharedModelContainer)
     }
