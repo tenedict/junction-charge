@@ -21,6 +21,9 @@
 		01E4621E2C675CD400FD6EF3 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E4621D2C675CD400FD6EF3 /* DateManager.swift */; };
 		63047F832C67083C00995467 /* EnterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F822C67083C00995467 /* EnterInformationView.swift */; };
 		63047F852C670CED00995467 /* OnboardingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F842C670CED00995467 /* OnboardingVIew.swift */; };
+		63A7C7892C677E78006536BD /* IngView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C7882C677E78006536BD /* IngView.swift */; };
+		63A7C78E2C677EC9006536BD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 63A7C78D2C677EC9006536BD /* Lottie */; };
+		63A7C7912C678050006536BD /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 63A7C7902C678050006536BD /* loading.json */; };
 		9D4F37602C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */; };
 		9D4F37622C66915800DD96B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F37612C66915800DD96B0 /* ContentView.swift */; };
 		9D4F37662C66915900DD96B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4F37652C66915900DD96B0 /* Assets.xcassets */; };
@@ -43,6 +46,8 @@
 		01E4621D2C675CD400FD6EF3 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		63047F822C67083C00995467 /* EnterInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInformationView.swift; sourceTree = "<group>"; };
 		63047F842C670CED00995467 /* OnboardingVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVIew.swift; sourceTree = "<group>"; };
+		63A7C7882C677E78006536BD /* IngView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngView.swift; sourceTree = "<group>"; };
+		63A7C7902C678050006536BD /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = ../../../../Downloads/loading.json; sourceTree = "<group>"; };
 		9D4F375C2C66915800DD96B0 /* Can I eat gwamegi?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can I eat gwamegi?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Can_I_eat_gwamegi_App.swift; sourceTree = "<group>"; };
 		9D4F37612C66915800DD96B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A7C78E2C677EC9006536BD /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +111,8 @@
 				63047F822C67083C00995467 /* EnterInformationView.swift */,
 				01E4621D2C675CD400FD6EF3 /* DateManager.swift */,
 				63047F842C670CED00995467 /* OnboardingVIew.swift */,
+				63A7C7882C677E78006536BD /* IngView.swift */,
+				63A7C7902C678050006536BD /* loading.json */,
 				9D4F37652C66915900DD96B0 /* Assets.xcassets */,
 				9D4F37672C66915900DD96B0 /* Preview Content */,
 			);
@@ -135,6 +143,9 @@
 			dependencies = (
 			);
 			name = "Can I eat gwamegi?";
+			packageProductDependencies = (
+				63A7C78D2C677EC9006536BD /* Lottie */,
+			);
 			productName = "Can I eat gwamegi?";
 			productReference = 9D4F375C2C66915800DD96B0 /* Can I eat gwamegi?.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 9D4F37532C66915800DD96B0;
+			packageReferences = (
+				63A7C78C2C677EC9006536BD /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 9D4F375D2C66915800DD96B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,6 +200,7 @@
 				01E462182C674D6600FD6EF3 /* Pretendard-Light.otf in Resources */,
 				01E4621B2C674D6600FD6EF3 /* Pretendard-SemiBold.otf in Resources */,
 				01E462142C674D6600FD6EF3 /* Pretendard-Black.otf in Resources */,
+				63A7C7912C678050006536BD /* loading.json in Resources */,
 				01E4621C2C674D6600FD6EF3 /* Pretendard-Thin.otf in Resources */,
 				9D4F37662C66915900DD96B0 /* Assets.xcassets in Resources */,
 			);
@@ -205,6 +220,7 @@
 				01E462082C67402B00FD6EF3 /* gpt.swift in Sources */,
 				9D4F37602C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift in Sources */,
 				63047F832C67083C00995467 /* EnterInformationView.swift in Sources */,
+				63A7C7892C677E78006536BD /* IngView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63A7C78C2C677EC9006536BD /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63A7C78D2C677EC9006536BD /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63A7C78C2C677EC9006536BD /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D4F37542C66915800DD96B0 /* Project object */;
 }
