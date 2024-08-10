@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63047F832C67083C00995467 /* EnterinformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F822C67083C00995467 /* EnterinformationView.swift */; };
+		63047F852C670CED00995467 /* OnboardingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63047F842C670CED00995467 /* OnboardingVIew.swift */; };
 		9D4F37602C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */; };
 		9D4F37622C66915800DD96B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F37612C66915800DD96B0 /* ContentView.swift */; };
 		9D4F37642C66915800DD96B0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F37632C66915800DD96B0 /* Item.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63047F822C67083C00995467 /* EnterinformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterinformationView.swift; sourceTree = "<group>"; };
+		63047F842C670CED00995467 /* OnboardingVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVIew.swift; sourceTree = "<group>"; };
 		9D4F375C2C66915800DD96B0 /* Can I eat gwamegi?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can I eat gwamegi?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Can_I_eat_gwamegi_App.swift; sourceTree = "<group>"; };
 		9D4F37612C66915800DD96B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */,
 				9D4F37612C66915800DD96B0 /* ContentView.swift */,
 				9D4F37632C66915800DD96B0 /* Item.swift */,
+				63047F822C67083C00995467 /* EnterinformationView.swift */,
+				63047F842C670CED00995467 /* OnboardingVIew.swift */,
 				9D4F37652C66915900DD96B0 /* Assets.xcassets */,
 				9D4F37672C66915900DD96B0 /* Preview Content */,
 			);
@@ -142,7 +148,9 @@
 			files = (
 				9D4F37622C66915800DD96B0 /* ContentView.swift in Sources */,
 				9D4F37642C66915800DD96B0 /* Item.swift in Sources */,
+				63047F852C670CED00995467 /* OnboardingVIew.swift in Sources */,
 				9D4F37602C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift in Sources */,
+				63047F832C67083C00995467 /* EnterinformationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
