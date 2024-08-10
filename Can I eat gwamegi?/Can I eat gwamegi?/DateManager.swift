@@ -4,6 +4,21 @@ class DateManager: ObservableObject {
     @Published var childBirthDate = Date()
     @Published var currentDate = Date()
     
+    func calculatePregnancyDay() -> Int {
+        let totalPregnancyDays = 280
+        
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.day], from: currentDate, to: childBirthDate)
+        
+        guard let daysUntilDueDate = components.day else {
+            return 0
+        }
+        
+        let daysPregnant = totalPregnancyDays - daysUntilDueDate
+        
+        return daysPregnant
+    }
+    
     func calculatePregnancyWeek() -> Int {
         let totalPregnancyDays = 280
         

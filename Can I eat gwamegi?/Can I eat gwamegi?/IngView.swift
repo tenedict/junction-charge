@@ -2,6 +2,10 @@ import SwiftUI
 import Lottie
 
 struct IngView: View {
+    @EnvironmentObject private var viewModel: ContentViewModel
+    
+    @Binding var viewCase: ViewCase
+    
     var body: some View {
         VStack() {
             HStack {
@@ -18,6 +22,13 @@ struct IngView: View {
             
             LottieView(name: "loading")
                 .frame(width: 300, height: 300)
+                .onAppear(perform: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.9) {
+                        if !viewModel.isLoading {
+                            viewCase = .hiHaedal
+                        }
+                    }
+                })
             
             Text("I have morning sickness.")
                 .font(.system(size: 17, weight: .bold))
@@ -31,5 +42,5 @@ struct IngView: View {
 }
 
 #Preview {
-    IngView()
+    IngView(viewCase: .constant(.ing))
 }
