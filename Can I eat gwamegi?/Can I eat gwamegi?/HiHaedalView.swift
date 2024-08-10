@@ -87,7 +87,57 @@ struct HiHaedalView: View {
                     .foregroundStyle(Color.clear)
                     .frame(height: 80)
                 
+                if foods.count >= 1 {
+                    Image(foods[0])
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .padding(0)
+                        .background(Color(red: 0.97, green: 0.91, blue: 0.85))
+                        .cornerRadius(83)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 50)
+                                .inset(by: 0.17)
+                                .stroke(Color(red: 0.83, green: 0.75, blue: 0.77), lineWidth: 0.33)
+                        )
+//                        .offset(x:-95, y:)
+                }
                 
+                Spacer()
+                
+                if foods.count >= 2 {
+                    Image(foods[1])
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .padding(0)
+                        .background(Color(red: 0.97, green: 0.91, blue: 0.85))
+                        .cornerRadius(83)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 50)
+                                .inset(by: 0.17)
+                                .stroke(Color(red: 0.83, green: 0.75, blue: 0.77), lineWidth: 0.33)
+                        )
+                    //                    .offset(x:-95, y: )
+                }
+                
+                Spacer()
+                
+                if foods.count == 3 {
+                    Image(foods[2])
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .padding(0)
+                        .background(Color(red: 0.97, green: 0.91, blue: 0.85))
+                        .cornerRadius(83)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 50)
+                                .inset(by: 0.17)
+                                .stroke(Color(red: 0.83, green: 0.75, blue: 0.77), lineWidth: 0.33)
+                        )
+                    //                    .offset(x:-95, y: riceOffset - 190)
+                }
                 
                 Rectangle()
                     .foregroundStyle(Color.clear)
@@ -95,12 +145,8 @@ struct HiHaedalView: View {
             }
         }
         .background(Color.customWhite)
-//        .onAppear(perform: {
-//            foods = viewModel.response.components(separatedBy: ",")
-//        })
+        .onAppear(perform: {
+            foods = viewModel.response.components(separatedBy: ", ")
+        })
     }
-}
-
-#Preview {
-    HiHaedalView(viewCase: .constant(.hiHaedal))
 }
