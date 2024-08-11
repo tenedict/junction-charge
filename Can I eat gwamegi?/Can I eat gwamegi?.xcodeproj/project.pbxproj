@@ -430,7 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Can I eat gwamegi?/Preview Content\"";
-				DEVELOPMENT_TEAM = WAC2RPX5HC;
+				DEVELOPMENT_TEAM = UW9295Z57Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Can-I-eat-gwamegi--Info.plist";
@@ -460,7 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Can I eat gwamegi?/Preview Content\"";
-				DEVELOPMENT_TEAM = WAC2RPX5HC;
+				DEVELOPMENT_TEAM = UW9295Z57Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Can-I-eat-gwamegi--Info.plist";

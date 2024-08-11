@@ -111,7 +111,7 @@ struct IngredientDetailView: View {
             if isFetchingNutritionInfo {
                 parseNutritionInfo(from: newValue)
                 // 두 번째 프롬프트 요청: 설명
-                viewModel.prompt = "\(response)가 임산부에게 좋은 이유를 정확하게 설명해줘. 길이는 300자 내외로 설명해줘. 대답은 영어로"
+                viewModel.prompt = "\(response)가 아까의 증상과 관련해서 임산부에게 좋은 이유를 정확하게 설명해줘. 길이는 300자 내외로 설명해줘. 대답은 영어로"
                 isFetchingNutritionInfo = false
                 isFetchingExplanation = true
                 viewModel.fetchResponse()
@@ -119,7 +119,7 @@ struct IngredientDetailView: View {
                 explanation = newValue
                 isFetchingExplanation = false
                 // 세 번째 프롬프트 요청: 레시피 제목
-                viewModel.prompt = "추천받은 \(response)의 레시피 5가지를 나열해줘. 단, 5개를 알려줘 . 그리고 단어만 콤마로 나열해. 숫자 쓰지말고 콤마만 사용해서 5가지 나타내. 대답은 영어로"
+                viewModel.prompt = "추천받은 \(response)의 레시피 5가지를 나열해줘. 단, 5개를 알려줘 . 그리고 단어만 콤마로 나열해. 숫자 쓰지말고 콤마만 사용해서 5가지 나타내. 대답은 영어로. 꼭 콤마로 구분해서 적어줘"
                 isFetchingRecipes = true
                 viewModel.fetchResponse()
             } else if isFetchingRecipes {
