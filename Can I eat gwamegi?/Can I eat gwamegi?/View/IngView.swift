@@ -30,7 +30,7 @@ struct IngView: View {
                     }
                 })
             
-            Text("I have morning sickness.")
+            Text("I have \(viewModel.symptom).")
                 .font(.system(size: 17, weight: .bold))
                 .foregroundStyle(Color(red: 0.29, green: 0.26, blue: 0.23))
                 .multilineTextAlignment(.center)

@@ -49,14 +49,14 @@ struct SelectView: View {
                                 
                                 // "기타" 항목 추가
                                 Button(action: {
-                                    selectedItem = "기타"
+                                    selectedItem = "etc"
                                 }, label: {
                                     ZStack {
                                         Image("symptomNotSelected")
                                             .resizable()
                                             .frame(width: 170.5, height: 89)
                                         
-                                        Text("기타")
+                                        Text("etc")
                                             .font(.system(size: 16, weight: .medium))
                                             .foregroundColor(Color(red: 0.29, green: 0.26, blue: 0.23))
                                     }
@@ -67,8 +67,8 @@ struct SelectView: View {
                     }
                     
                     // "기타"가 선택되었을 때 텍스트 필드 표시
-                    if selectedItem == "기타" {
-                        TextField("증상을 입력하세요", text: $customSymptom)
+                    if selectedItem == "etc" {
+                        TextField("Type your symptom", text: $customSymptom)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.horizontal, 16)
                     }
@@ -83,24 +83,25 @@ struct SelectView: View {
                     }
                 }
                 .padding(.bottom)
-              
-                Button(action: {
-                    let finalSelection = selectedItem == "기타" ? customSymptom : selectedItem
-                    viewModel.prompt = finalSelection + " 임산부에게 이런 증상이 나타나는데 apple, bean, cherry, egg, grape, beef, melon, mushroom, orange, plum, potato, rice, schisandra, strawberry, spinach, tomato.. 이 중에서 이 증상에 좋은 3개를 골라서 ,단위로 나열해줘. 예를 들면 apple,spinach,tomato 이런식으로 아무 말도 하지말고 단어와 콤마만 써. 영어로 답해줘."
-                    viewModel.fetchResponse()
-                    
-                    viewCase = .ing
-                }, label: {
-                    Image("largeButton2")
-                        .resizable()
-                        .frame(width: 353, height: 55)
-                        .overlay {
-                            Text("Continue")
-                                .font(.custom("Pretendard-SemiBold", size: 18))
-                                .foregroundStyle(Color.white)
-                        }
-                })
             }
+            
+            Button(action: {
+                let finalSelection = selectedItem == "기타" ? customSymptom : selectedItem
+                viewModel.symptom = finalSelection
+                viewModel.prompt = finalSelection + " 임산부에게 이런 증상이 나타나는데 apple, bean, cherry, egg, grape, beef, melon, mushroom, orange, plum, potato, rice, schisandra, strawberry, spinach, tomato 중에서 이 증상에 좋은 3개를 골라서 ,단위로 나열해줘. 예를 들면 apple,spinach,tomato 이런식으로 아무 말도 하지말고 단어와 콤마만 써. 영어로 답해줘."
+                viewModel.fetchResponse()
+                
+                viewCase = .ing
+            }, label: {
+                Image("largeButton2")
+                    .resizable()
+                    .frame(width: 353, height: 55)
+                    .overlay {
+                        Text("Continue")
+                            .font(.custom("Pretendard-SemiBold", size: 18))
+                            .foregroundStyle(Color.white)
+                    }
+            })
         }
         .padding([.leading, .trailing])
         .background(Color.customWhite)

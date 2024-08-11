@@ -19,49 +19,42 @@ struct IngredientDetailView: View {
     var body: some View {
         ScrollView(showsIndicators: false){
             VStack(alignment: .leading) {
-             
-                        
-                    Text("\(region) \(response)")
+                Text("\(response) from \(region)")
                     .font(.system(size: 22, weight: .bold))
-                        .padding(.vertical)
-                    Spacer()
-            
-             
+                    .padding(.vertical)
                 
                 if viewModel.isLoading {
-                    ProgressView()
-                        .padding()
+                    LottieView(name: "loading")
+                        .frame(width: 300, height: 300)
                 } else {
                     if showNutritionInfo {
                         VStack(alignment: .leading) {
-                            // 추천 이유
-                            
                             VStack(alignment: .leading) {
-                                Text("Why recommand?")
+                                Text("Why was it recommanded?")
                                     .font(.system(size: 18, weight: .bold))
                                     .padding(.top)
                                     .padding(.leading,8)
-                                VStack{
-                                    if explanation.count > 140 { // 설명이 너무 길면 전체보기 버튼을 표시
-                                        Text(explanation.prefix(130) + "...")
-                                            .foregroundStyle(Color.black)
-                                        
-                                        Button(action: {
-                                            showFullExplanation = true
-                                        }) {
-                                            HStack {
-                                                Spacer()
-                                                Text("more")
-                                                    .padding(.trailing, 20)
-                                                    .foregroundStyle(Color.black)
-                                            }
+                                
+                                if explanation.count > 140 { // 설명이 너무 길면 전체보기 버튼을 표시
+                                    Text(explanation.prefix(130) + "...")
+                                        .foregroundStyle(Color.black)
+                                        .padding(.horizontal)
+                                    
+                                    Button(action: {
+                                        showFullExplanation = true
+                                    }) {
+                                        HStack {
+                                            Spacer()
+                                            
+                                            Text("more")
+                                                .padding(.horizontal, 20)
+                                                .foregroundStyle(Color.black)
                                         }
-                                    } else {
-                                        Text(explanation)
-                                            .foregroundStyle(Color.black)
                                     }
+                                } else {
+                                    Text(explanation)
+                                        .foregroundStyle(Color.black)
                                 }
-                                .padding(8)
                             }
                             .background(RoundedRectangle(cornerRadius: 10).strokeBorder(Color.black, lineWidth: 2))
                             .padding(.bottom)

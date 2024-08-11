@@ -5,6 +5,7 @@ class ContentViewModel: ObservableObject {
     @Published var prompt: String = ""
     @Published var response: String = ""
     @Published var isLoading: Bool = false
+    @Published var symptom: String = ""
     
     private var apiService = APIService.shared
     private var cancellables = Set<AnyCancellable>()

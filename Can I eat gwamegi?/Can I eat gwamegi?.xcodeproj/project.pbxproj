@@ -85,6 +85,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01BFC0D22C683CB7001E043A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				010F9DBD2C67BC8700CCC355 /* MainView.swift */,
+				63047F842C670CED00995467 /* OnboardingVIew.swift */,
+				010F9DBA2C67BBA200CCC355 /* HiHaedalView.swift */,
+				010F9DB92C67BBA200CCC355 /* SelectView.swift */,
+				63A7C7882C677E78006536BD /* IngView.swift */,
+				01E4622F2C67B03B00FD6EF3 /* IngredientDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01BFC0D32C683CC2001E043A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				01E462072C67402B00FD6EF3 /* api.swift */,
+				01E462062C67402B00FD6EF3 /* gpt.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		01BFC0D42C683D1E001E043A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				010F9DBF2C67C3BD00CCC355 /* ContentViewModel.swift */,
+				01E4621D2C675CD400FD6EF3 /* DateManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01BFC0D52C683D84001E043A /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				01E462212C67880900FD6EF3 /* LottieView.swift */,
+				01E4621F2C67864500FD6EF3 /* loading.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		01BFC0D62C683DA1001E043A /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				9D4F37612C66915800DD96B0 /* ContentView.swift */,
+				01BFC0D02C67E965001E043A /* TestView.swift */,
+				01E462302C67B03B00FD6EF3 /* SymptomsView.swift */,
+				01E4622D2C67B03B00FD6EF3 /* IngredientView.swift */,
+				01E4622E2C67B03B00FD6EF3 /* RecommandView.swift */,
+			);
+			path = Temp;
+			sourceTree = "<group>";
+		};
 		01E462132C674D6600FD6EF3 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,24 +175,12 @@
 				013793F62C67322E003DDD72 /* Can-I-eat-gwamegi--Info.plist */,
 				01E462132C674D6600FD6EF3 /* Font */,
 				9D4F375F2C66915800DD96B0 /* Can_I_eat_gwamegi_App.swift */,
-				010F9DBD2C67BC8700CCC355 /* MainView.swift */,
-				9D4F37612C66915800DD96B0 /* ContentView.swift */,
-				010F9DBF2C67C3BD00CCC355 /* ContentViewModel.swift */,
-				01E462072C67402B00FD6EF3 /* api.swift */,
-				01E462302C67B03B00FD6EF3 /* SymptomsView.swift */,
-				010F9DBA2C67BBA200CCC355 /* HiHaedalView.swift */,
-				010F9DB92C67BBA200CCC355 /* SelectView.swift */,
-				01E4622F2C67B03B00FD6EF3 /* IngredientDetailView.swift */,
-				01E4622D2C67B03B00FD6EF3 /* IngredientView.swift */,
-				01BFC0D02C67E965001E043A /* TestView.swift */,
-				01E4622E2C67B03B00FD6EF3 /* RecommandView.swift */,
-				01E462062C67402B00FD6EF3 /* gpt.swift */,
-				01E4621D2C675CD400FD6EF3 /* DateManager.swift */,
-				63047F842C670CED00995467 /* OnboardingVIew.swift */,
-				63A7C7882C677E78006536BD /* IngView.swift */,
-				01E462212C67880900FD6EF3 /* LottieView.swift */,
-				01E4621F2C67864500FD6EF3 /* loading.json */,
+				01BFC0D32C683CC2001E043A /* API */,
+				01BFC0D42C683D1E001E043A /* Model */,
+				01BFC0D22C683CB7001E043A /* View */,
+				01BFC0D52C683D84001E043A /* Lottie */,
 				9D4F37652C66915900DD96B0 /* Assets.xcassets */,
+				01BFC0D62C683DA1001E043A /* Temp */,
 				9D4F37672C66915900DD96B0 /* Preview Content */,
 			);
 			path = "Can I eat gwamegi?";
@@ -390,7 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Can I eat gwamegi?/Preview Content\"";
-				DEVELOPMENT_TEAM = UW9295Z57Q;
+				DEVELOPMENT_TEAM = WAC2RPX5HC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Can-I-eat-gwamegi--Info.plist";
@@ -420,7 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Can I eat gwamegi?/Preview Content\"";
-				DEVELOPMENT_TEAM = UW9295Z57Q;
+				DEVELOPMENT_TEAM = WAC2RPX5HC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Can-I-eat-gwamegi--Info.plist";
